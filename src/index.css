@@ -1,0 +1,327 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html.light {
+  @apply bg-[#E4C7B7]  text-gray-900
+}
+
+html.dark {
+   @apply bg-[#522157]  text-[#FCEDEA]
+}
+  
+html{
+   scroll-behavior: smooth;
+} 
+
+body {
+  transition: background-color 0.3s ease, 
+  color 0.3s ease;
+}
+
+
+/*            ....NAV_BAR....              */
+
+
+.nav-bar {
+  @apply fixed w-full z-50 shadow-md
+}
+
+
+html.light .scrolled-nav {
+  background-color: rgba(200, 170, 150, 0.95); 
+}
+
+html.dark .scrolled-nav {
+  background-color: rgba(40, 15, 45, 0.95); 
+}
+
+
+.nav-item{
+  @apply flex justify-between items-center
+    list-none p-1 text-base md:mx-3
+}
+
+.high-name{
+  @apply  font-bold
+   bg-gradient-to-r from-[#004E9A] to-[#428CDA] 
+   bg-clip-text text-transparent 
+   pb-2 ml-5
+}
+
+.nav-link{
+  @apply  hidden md:flex md:flex-row gap-9 mx-2 
+}
+
+.nav-link a {
+  @apply relative  transition-all 
+  duration-200 ease-in-out hover:text-blue-700;
+}
+
+.nav-link a::after {
+  content: "";
+  @apply absolute left-0 bottom-0 w-0 h-[2px] 
+  bg-gradient-to-r from-[#004E9A] to-[#428CDA] 
+  transition-all duration-300;
+}
+
+.nav-link a:hover::after {
+  @apply w-full;
+}
+
+
+.mode-toggle{
+  @apply flex items-center gap-4 pr-5
+}
+
+.mode-icon{
+  @apply order-1 md:order-2 cursor-pointer
+}
+
+.nav-toggle{
+  @apply md:hidden text-[20px] order-2
+}
+
+.toggle-open{
+  @apply md:hidden flex flex-col gap-4 p-4 
+   w-full px-6 pb-4 text-[#FCEDEA] bg-[#522157]
+}
+
+/*            ....HERO-SECTION....              */
+
+
+.hero{
+ @apply flex  flex-col justify-items-center  md:flex-row  
+ text-[2rem]  font-medium   md:text-[2.5rem]
+   md:pt-45 justify-evenly gap-[1rem]  
+   min-h-screen pl-[1.25rem] pr-[1.25rem]
+
+}
+
+.hero-text{
+  @apply flex flex-col  
+}
+
+.high-name p{
+  @apply  text-[1.5rem] md:text-3xl 
+}
+
+.hero-text-1{
+    @apply pb-[0.30rem]
+}
+
+.hero-text-2{
+  @apply text-[1.5rem]   md:text-[2rem]  
+  font-normal 
+  pb-[2rem]
+}
+
+.hero-text-3{
+   @apply    text-[0.90rem]  md:text-[1.25rem] 
+   font-light
+}
+
+
+.hero-img {
+  @apply -mt-[3.5rem] w-[23rem] h-[23rem] 
+  md:w-[30rem] md:h-[28rem] rounded-md 
+  overflow-hidden shadow-lg md:-mt-10
+}
+
+.hero-img img {
+  @apply w-full h-full object-cover;
+}
+
+.btn{
+  @apply text-[0.8rem] pt-[2rem] flex gap-[4rem] 
+}
+
+.btn-icon{
+  @apply px-[0.5rem] py-[0.5rem] flex  
+  gap-[0.5rem] border md:py-[0.5rem] 
+  md:px-[0.75rem]  rounded-xl 
+  bg-gradient-to-r from-[#004E9A] to-[#428CDA] 
+  font-medium shadow-md transition-all duration-300 
+  ease-in-out hover:scale-105 hover:shadow-xl 
+  hover:from-[#003B7A] hover:to-[#2A6CBA];
+}
+
+.icon-img{
+      @apply  w-[1.25rem] h-[1.25rem]
+}
+
+
+/*            ....EDUCATION-SECTION....              */
+
+.edu{
+  @apply  min-h-screen  pl-[2rem] pr-[2rem] 
+  md:pl-[5rem] md:pr-[5rem]
+}
+
+.head{
+  @apply font-bold
+   bg-gradient-to-r from-[#004E9A] to-[#428CDA] 
+   bg-clip-text text-transparent text-center 
+   text-[2rem] mb-[4rem] 
+
+}
+
+.card {
+  @apply flex flex-col gap-[2rem] 
+}
+
+.school{
+ @apply  border md:p-[1.5rem] bg-[#EBDACF] 
+}
+
+.school h3{
+   @apply text-[1.5rem]   md:text-[2rem]  
+   font-normal}
+
+.college{
+  @apply border p-[1.5rem] bg-[#EBDACF]  
+}
+
+.college h3 {
+   @apply text-[1.5rem]   md:text-[2rem]  font-normal
+}
+
+.edu-icon{
+  @apply w-[2rem] h-[2rem]
+}
+
+.edu-text1{
+  @apply flex flex-row gap-[1rem] justify-start 
+  items-center
+}
+
+.edu-text2{
+  @apply pl-[3.2rem] pt-[1rem] flex flex-col
+  gap-[1rem]
+}
+
+html.light .card-style{
+  @apply bg-[#EBDACF] text-gray-900 shadow-md;
+}
+
+html.dark .card-style {
+  @apply bg-[#4A1C4D] text-[#FCEDEA] shadow-md;
+}
+
+.card-style 
+{
+  @apply rounded-xl p-6 shadow-lg flex flex-col gap-4 
+  hover:scale-[1.02] transition-transform 
+  duration-300;
+}
+
+.edu-text2 h5{
+  @apply  text-[1.25rem]
+}
+
+
+/*            ....PROJECT-SECTION....              */
+
+.project {
+  @apply min-h-screen px-4 md:px-16 py-10;
+}
+
+
+.pro-grid {
+  @apply  px-4 sm:px-6 lg:px-8 grid gap-4 grid-cols-1 sm:grid-cols-1 lg:grid-cols-2;
+}
+
+
+.pro-card{
+  @apply transition-transform hover:-translate-y-2
+   hover:shadow-2xl w-full h-full overflow-hidden flex flex-col
+}
+
+.pro-img{
+  @apply w-full h-full object-cover rounded-md;
+}
+
+.project h2{
+  @apply text-xl font-semibold
+}
+
+.project p{
+  @apply text-sm mt-2
+}
+
+.pro-tech{
+  @apply flex flex-wrap gap-2 mt-3
+}
+
+.tech-btn{
+  @apply text-xs bg-[#004E9A] text-white px-2 py-1 rounded
+}
+
+.code-btn{
+  @apply  hover:scale-105 transition
+}
+
+.code{
+  @apply flex gap-[1rem]
+}
+
+/*            ....SKILLS-SECTION....                */
+
+.skills{
+   @apply max-h-[670px] overflow-y-auto px-4 md:px-16 py-10; 
+
+
+
+}
+
+.skills-card{
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6
+}
+
+.skills-title{
+  @apply text-xl font-semibold mb-3
+}
+
+.skills-list{
+  @apply flex flex-wrap gap-2
+}
+
+.tech-btn {
+  @apply text-xs bg-[#004E9A] text-white px-3 py-1 rounded-md 
+  transition-colors duration-300 ease-in-out 
+  hover:bg-[#003a72] cursor-pointer select-none;
+
+}
+
+/*            ....PROJECT-SECTION....                */
+
+
+.contact{
+   @apply min-h-screen px-4 md:px-16 py-10;
+}
+
+.contact-grid{
+   @apply grid grid-cols-1 md:grid-cols-2 gap-4
+}
+
+.input-style{
+  @apply w-full p-3 rounded-md border 
+}
+
+.submit-style{
+  @apply w-full py-3 bg-gradient-to-r from-[#004E9A] to-[#428CDA] text-white rounded-md font-medium hover:from-[#003B7A] hover:to-[#2A6CBA] transition-all
+}
+
+.submit-text{
+  @apply text-center mt-4 text-sm font-medium text-green-500 dark:text-green-400
+}
+
+.card-cont{
+  @apply max-w-2xl mx-auto bg-white dark:bg-[#4A1C4D] p-6 rounded-xl shadow-lg space-y-6 transition-colors duration-300
+}
+
+.cont{
+  @apply flex flex-row
+}
