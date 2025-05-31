@@ -22,18 +22,19 @@ A modern, responsive portfolio website built with **React** and **Tailwind CSS**
 
 ## 📁 Folder Structure
 
+```bash
 portfolio-website/
 │
-├── public/ 
+├── public/                 # Static assets
 ├── src/
-│ ├── assets/
-│ ├── components/ 
-│ ├── sections/
-│ ├── App.jsx
-│ ├── index.css 
-│ └── main.jsx
-├── tailwind.config.js
-├── vite.config.js 
+│   ├── assets/             # Images and icons
+│   ├── components/         # Reusable components
+│   ├── sections/           # Hero, Education, Projects, Skills, etc.
+│   ├── App.jsx             # Main app component
+│   ├── index.css           # Tailwind & custom styles
+│   └── main.jsx            # Entry point
+├── tailwind.config.js      # Tailwind configuration
+├── vite.config.js          # Vite configuration
 └── package.json
 
 
