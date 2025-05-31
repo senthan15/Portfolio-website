@@ -92,12 +92,11 @@ html.dark .scrolled-nav {
 /*            ....HERO-SECTION....              */
 
 
-.hero{
- @apply flex  flex-col justify-items-center  md:flex-row  
- text-[2rem]  font-medium   md:text-[2.5rem]
-   md:pt-45 justify-evenly gap-[1rem]  
-   min-h-screen pl-[1.25rem] pr-[1.25rem]
-
+.hero {
+  @apply flex flex-col items-center text-center
+  md:flex-row md:items-start md:text-left
+  text-[1.5rem] md:text-[2.5rem] font-medium
+  min-h-screen px-5 md:px-[5rem] gap-4 md:gap-[1rem] md:pt-45 justify-evenly;
 }
 
 .hero-text{
@@ -125,10 +124,11 @@ html.dark .scrolled-nav {
 
 
 .hero-img {
-  @apply -mt-[3.5rem] w-[23rem] h-[23rem] 
+  @apply mx-auto mt-4 w-[18rem] h-[18rem] 
   md:w-[30rem] md:h-[28rem] rounded-md 
-  overflow-hidden shadow-lg md:-mt-10
+  overflow-hidden shadow-lg md:-mt-10;
 }
+
 
 .hero-img img {
   @apply w-full h-full object-cover;
@@ -269,12 +269,10 @@ html.dark .card-style {
 
 /*            ....SKILLS-SECTION....                */
 
-.skills{
-   @apply max-h-[670px] overflow-y-auto px-4 md:px-16 py-10; 
-
-
-
+.skills {
+  @apply min-h-screen px-4 md:px-16 py-10;
 }
+
 
 .skills-card{
   @apply grid grid-cols-1 md:grid-cols-2 gap-6

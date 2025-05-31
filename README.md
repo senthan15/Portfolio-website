@@ -2,17 +2,11 @@
 
 A modern, responsive portfolio website built with **React** and **Tailwind CSS**, designed to showcase projects, education, skills, and more. Includes support for light/dark themes, animated transitions, and mobile responsiveness.
 
-## 📸 Preview
-
-![Portfolio Preview](./preview.png)  
-> ⚠️ Replace this with an actual screenshot of your deployed website.
-
 ---
 
 ## 🌐 Live Demo
 
-[🔗 View Live Site](https://your-deployment-url.com)  
-> Replace with your actual deployed URL (e.g., Vercel, Netlify)
+[🔗 View Live Site](https://peterdevereux.netlify.app/)  
 
 ---
 
@@ -42,9 +36,6 @@ portfolio-website/
 ├── vite.config.js # Vite configuration
 └── package.json
 
-yaml
-Copy
-Edit
 
 ---
 

@@ -16,7 +16,7 @@ function Hero() {
                                    From sleek UIs to robust backends —
             I turn ideas into scalable, real-world solutions.</p>
       <div className='btn'>
-          <a href='#' className="btn-icon" ><img src={contact} alt="contact"  className='icon-img'/>Contact me</a>
+          <a href='#contact' className="btn-icon" ><img src={contact} alt="contact"  className='icon-img'/>Contact me</a>
           <a href='#' className="btn-icon"><img src={down} alt="download"  className='icon-img'/>Download CV</a>
         </div>
         

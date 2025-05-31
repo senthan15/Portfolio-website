@@ -45,7 +45,7 @@ function Project() {
     ]
 
   return (
-    <div id="pro" className="project">
+    <div id="projects" className="project">
         <h3 className='head '>Projects</h3>
         <div className='pro-grid'>
             {projects.map((project,index)=>(
