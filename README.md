@@ -24,16 +24,16 @@ A modern, responsive portfolio website built with **React** and **Tailwind CSS**
 
 portfolio-website/
 │
-├── public/ # Static assets
+├── public/ 
 ├── src/
-│ ├── assets/ # Images and icons
-│ ├── components/ # Reusable components
-│ ├── sections/ # Hero, Education, Projects, Skills, etc.
-│ ├── App.jsx # Main app component
-│ ├── index.css # Tailwind & custom styles
-│ └── main.jsx # Entry point
-├── tailwind.config.js # Tailwind configuration
-├── vite.config.js # Vite configuration
+│ ├── assets/
+│ ├── components/ 
+│ ├── sections/
+│ ├── App.jsx
+│ ├── index.css 
+│ └── main.jsx
+├── tailwind.config.js
+├── vite.config.js 
 └── package.json
 
 
