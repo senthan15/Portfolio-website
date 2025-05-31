@@ -36,7 +36,7 @@ portfolio-website/
 ├── tailwind.config.js      # Tailwind configuration
 ├── vite.config.js          # Vite configuration
 └── package.json
-
+``` 
 
 ---
 
